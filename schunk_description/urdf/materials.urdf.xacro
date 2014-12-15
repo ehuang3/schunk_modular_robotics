@@ -10,7 +10,7 @@
   </material>
 
   <material name="Schunk/Black">
-    <color rgba="0.0 0.0 0.0 1.0"/>
+    <color rgba="0.05 0.05 0.05 1.0"/>
   </material>
 
   <material name="Schunk/DarkGolden">

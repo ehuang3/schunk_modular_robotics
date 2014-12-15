@@ -118,23 +118,23 @@
       </xacro:cylinder_inertial> 
 -->
       <visual>
-        <origin xyz="0 0 -0.39" rpy="0 0 ${M_PI}"/>
+        <origin xyz="0 0 -0.328" rpy="0 0 ${M_PI}"/>
         <geometry>
-          <mesh filename="package://schunk_description/meshes/lwa4d/arm_3_link.stl"/>
+          <mesh filename="package://schunk_description/meshes/lwa4d/arm_3_link_shortened.stl"/>
         </geometry>
         <material name="Schunk/LightGrey"/>
       </visual>
       <collision>
-        <origin xyz="0 0 -0.39" rpy="0 0 ${M_PI}"/>
+        <origin xyz="0 0 -0.328" rpy="0 0 ${M_PI}"/>
         <geometry>
-          <mesh filename="package://schunk_description/meshes/lwa4d/arm_3_link_collision.stl"/>
+          <mesh filename="package://schunk_description/meshes/lwa4d/arm_3_link_shortened_collision.stl"/>
         </geometry>
       </collision>
     </link>
 
     <!-- joint between arm_3_link and arm_4_link -->
     <joint name="${name}_4_joint" type="revolute">
-      <origin xyz="0 0 -0.39" rpy="-${M_PI/2} 0 0"/>
+      <origin xyz="0 0 -0.328" rpy="-${M_PI/2} 0 0"/>
       <parent link="${name}_3_link"/>
       <child link="${name}_4_link"/>
       <axis xyz="0 0 1"/>
